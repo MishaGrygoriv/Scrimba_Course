@@ -1,0 +1,84 @@
+@import "../../../theme/index.scss";
+
+.ReactFacts {
+    text-align: left;
+    max-width: 550px;
+    margin: auto;
+    &__nav {
+      @include flex(center, center);
+      padding: 30px 25px;
+      background-color: #21222a;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    &__nav-title {
+      @include text($H220, 600, #61dafb);
+      margin-right: 140px;
+    }
+    &__nav-subtitle {
+      @include text($H60, 600, #deebf8);
+    }
+    &__logo {
+      max-width: 50px;
+      width: 100%;
+      animation: wiggle 2s linear infinite;
+    }
+    &__main-content {
+      padding: 57px 27px 40px 27px;
+      box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+      background-color: #282d35;
+      background-image: url(../../../assets/logo.svg);
+      background-repeat: no-repeat;
+      background-position-x: 280px;
+      background-position-y: -8px;
+    }
+    &__title {
+      @include text($H400, 700, $light-color);
+      margin-bottom: 40px;
+    }
+    &__list {
+      padding-left: 52px;
+    }
+    &__item {
+      @include text($H60, 400, $light-color);
+      margin-bottom: 20px;
+      list-style: disc;
+      &::marker {
+        font-size: 1.4rem;
+        color: #61dafb;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__footer {
+      padding: 14px;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    }
+  }
+  
+  @keyframes wiggle {
+    0%,
+    7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%,
+    100% {
+      transform: rotateZ(0);
+    }
+  }
+  

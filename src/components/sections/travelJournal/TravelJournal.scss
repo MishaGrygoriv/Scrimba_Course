@@ -1,0 +1,24 @@
+@import "../../../theme/index.scss";
+
+.TravelJournal {
+    max-width: 550px;
+    margin: 0 auto;
+    box-shadow: rgb(0 0 0 / 7%) 0px 1px 1px, rgb(0 0 0 / 10%) 0px 2px 2px, rgb(0 0 0 / 16%) 0px 4px 4px, rgb(0 0 0 / 27%) 0px 8px 8px, rgb(0 0 0 / 12%) 0px 16px 16px;
+    &__navbar {
+        background-color: #F55A5A;
+        @include flex(center, center);
+        padding: 20px 0 20px 0;
+    }
+    &__logo {
+        width: 24px;
+        height: 24px;
+        margin-right: 7px;
+    }
+    &__nav-title {
+        @include text($H50, 400, $light-color);
+    }
+    &__list {
+        padding: 40px 40px 28px;
+        background-color: $light-color;
+    }
+}

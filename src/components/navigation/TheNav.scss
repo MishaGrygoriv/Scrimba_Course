@@ -1,0 +1,28 @@
+.TheNav {
+    text-align: center;
+    &__item {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__link {
+        padding: 4px 16px;
+        border: 1px solid #5CCCFF;
+        border-radius: 8px;
+        display: block;
+        color: #6F6F6F;
+        font-weight: 600;
+        transition: all 0.5s ease-out;
+        &:hover {
+            border: 1px solid #26BBFF;
+            background-color: #04161e;
+            color: #9d9d9d;
+        }
+        &._active {
+            border-color: #26BBFF;
+            background-color: #26BBFF;
+            color: white;
+        }
+    }
+}

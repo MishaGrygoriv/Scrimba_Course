@@ -1,0 +1,35 @@
+@import "../../../theme/index.scss";
+
+.MemeComponent {
+    padding: 36px;
+    &__form {
+        display: grid;
+        grid-template: 40px 40px / 1fr 1fr;
+        gap: 17px;
+    }
+    &__form-input {
+        border-radius: 5px;
+        border: 1px solid #D5D4D8;
+        font-size: 12px;
+        text-indent: 5px;
+        &::placeholder {
+            color: #0D0D0D;
+        }
+    }
+    &__form-btn {
+        grid-column: 1 / -1;
+        background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+        border-radius: 5px;
+        @include text($H60, 600, $light-color);
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        position: relative;
+    }
+    &__picture {
+        width: 27px;
+        position: absolute;
+        bottom: 7px;
+        right: 117px;
+    }
+}

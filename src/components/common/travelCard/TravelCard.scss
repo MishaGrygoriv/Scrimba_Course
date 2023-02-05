@@ -1,0 +1,55 @@
+@import "../../../theme/index.scss";
+
+.TravelCard {
+  @include flex(flex-start, flex-start);
+  margin-bottom: 31px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    max-width: 478px;
+    width: 100%;
+    top: 186px;
+    border: 1px solid #F5F5F5;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &__image {
+    margin-right: 20px;
+  }
+  &__info {
+    padding: 20px 15px 20px 0;
+    text-align: left;
+  }
+  &__location-wrapper {
+    font-size: 10px;
+    margin-bottom: 7px;
+  }
+  &__location-icon {
+    margin-right: 4px;
+    width: 7px;
+    height: 9px;
+  }
+  &__location-item {
+    letter-spacing: 0.17em;
+    margin-right: 12px;
+    color: #2b283a;
+  }
+  &__location-link {
+    text-decoration: underline;
+    color: #918e9b;
+  }
+  &__title {
+    @include text($H250, 600, #2b283a);
+    margin-bottom: 12px;
+  }
+  &__data {
+    @include text($H10, 600, #2b283a);
+    margin-bottom: 7px;
+  }
+  &__description {
+    @include text($H10, 400, #2b283a);
+    line-height: 150%;
+  }
+}
